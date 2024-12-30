@@ -1,1 +1,1 @@
-"# AMaze_Study" 
+"# AMazeStudy" 
