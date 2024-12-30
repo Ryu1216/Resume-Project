@@ -7,7 +7,7 @@ https://boiling-capri-3b8.notion.site/STUD001-HTML-169077591f228068bbd7e2e41d5cb
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/8336349c-cd08-453d-8b4e-5ef1266584aa" />
 
 ```bash
-git clone https://github.com/qkrwoghd04/AMazeStudy.git
+git clone https://github.com/AMazeStudy/AMazeStudy.git
 git switch [자기 이름 브랜치]
 git merge main // 메인에 변경사항 내 이름 브랜치로 전부 병합
 git push origin [자기 이름 브랜치]
