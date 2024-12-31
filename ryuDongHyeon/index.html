@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Layout</title>
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS를 직접 포함함 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif; /* Inter 폰트 적용 */
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    /* 전체 레이아웃 컨테이너 */
+    .container {
+      display: flex; /* 두 단으로 나누는 핵심 설정 */
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 왼쪽 컬럼 스타일 */
+    .left-column {
+      width: 33%; /* 왼쪽 컬럼 너비 */
+      background-color: #222; /* 배경 색상 */
+      color: #fff; /* 텍스트 색상 */
+      padding: 20px;
+    }
+
+    .left-column h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .left-column h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .left-column p {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .left-column h3 {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .left-column ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .left-column li {
+      margin-bottom: 5px;
+    }
+
+    /* 오른쪽 컬럼 스타일 */
+    .right-column {
+      width: 67%; /* 오른쪽 컬럼 너비 */
+      padding: 20px;
+    }
+
+    .right-column h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .right-column .job, .right-column .education {
+      margin-bottom: 20px;
+    }
+
+    .right-column h4 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .right-column p {
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Column -->
+    <div class="left-column">
+      <div class="header">
+        <h1>RYU DONGHYEON</h1>
+        <h2>SW Developer</h2>
+        <p>I became a developer to create the services I wanted and to make things that I thought were worthwhile accessible to anyone anywhere and at any time.</p>
+        <p class="location">Yong-In, Korea</p>
+      </div>
+
+      <div class="contact">
+        <h3>CONTACT</h3>
+        <p>Email: r12dh16@gmail.com</p>
+        <p>Phone: +82 10-3928-2897</p>
+        <p>Portfolio: vegastech.tistory.com</p>
+        <p>Website: www.naver.com</p>
+      </div>
+
+      <div class="social">
+        <h3>SOCIAL</h3>
+        <p>LinkedIn: /Donghyeon Ryu</p>
+        <p>Facebook: /tester</p>
+        <p>Instagram: /ryudong_hyeon</p>
+      </div>
+
+      <div class="skills">
+        <h3>SKILLS</h3>
+        <ul>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Python</li>
+        </ul>
+      </div>
+      <div class="education">
+        <h3>EDUCATION</h3>
+        <p>Chung-Ang University</p>
+        <p>Bachelor / SW-Venture, Business Administration</p>
+        <p>2018-2025</p>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+      <div class="experience">
+        <h3>EXPERIENCE</h3>
+        <div class="job">
+          <h4>Your Job Title</h4>
+          <p>Company Name | City</p>
+          <p>2023-Present</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div class="job">
+          <h4>Your Job Title</h4>
+          <p>Company Name | City</p>
+          <p>2023-Present</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
