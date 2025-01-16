@@ -11,9 +11,9 @@ body {
   color: #fff;
   line-height: 1.6;
   z-index: 1;
-  max-width: 210mm; /* A4 크기 */
-  margin: 0 auto; /* 중앙 정렬 */
-  padding: 20px; /* 여백 추가 */
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .header-section {
@@ -25,6 +25,7 @@ body {
   height: 400px;
   overflow: hidden;
 }
+
 .header-section::before {
   content: "";
   position: absolute;
@@ -32,13 +33,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('Profile Picture2.jpg'); /* 배경 이미지 설정 */
+  background-image: url('Profile Picture2.jpg');
   background-size: cover;
   background-position: 50% 40%;
-  filter: blur(15px); /* 블러 효과 적용 */
-  z-index: 1; /* 텍스트 뒤에 오도록 설정 */
+  filter: blur(15px);
+  z-index: 1;
 }
-
 
 .header-info {
   max-width: 600px;
@@ -59,7 +59,6 @@ body {
   line-height: 1;
   margin-bottom: 30px;
   letter-spacing: -1px;
-  
 }
 
 .header-info p {
@@ -81,10 +80,10 @@ body {
   position: absolute;
   top: 100px;
   right: 50px;
-  width: 40%; /* 변경된 부분 */
-  height: auto; /* 변경된 부분 */
-  max-width: 450px; /* 최대 크기 제한 */
-  max-height: 600px; /* 최대 크기 제한 */
+  width: 40%;
+  height: auto;
+  max-width: 450px;
+  max-height: 600px;
   z-index: 3;
   overflow: auto;
 }
@@ -95,11 +94,6 @@ body {
   object-fit: cover;
   z-index: 3;
   overflow: overlay;
-} 
-
-.right-column {
-  position: relative;
-  z-index: 1; /* z-index 값을 낮게 설정 */
 }
 
 .container {
@@ -191,26 +185,70 @@ body {
   color: #333;
   margin-bottom: 5px;
 }
+
 .two-columns {
   column-count: 2;
-  column-gap: 20px; /* 두 단 사이의 간격 */
+  column-gap: 20px;
 }
 
-/* 반응형 디자인을 위한 미디어 쿼리 */
+/* Enhanced responsive design */
 @media (max-width: 768px) {
-  .profile-image-container {
-    width: 40%; /* 작은 화면에서는 더 큰 비율로 설정 */
-    right: 50px; /* 위치 조정 */
+  .container {
+    flex-direction: column;
   }
-  body {
-    max-width: 100%;
-    padding: 10px;
+  
+  .left-column {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .right-column {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .header-info h1 {
+    font-size: 3.5rem;
+  }
+  
+  .profile-image-container {
+    width: 40%;
+    right: 20px;
+  }
+  
+  .location {
+    top: 20px;
+    right: 20px;
   }
 }
 
 @media (max-width: 480px) {
+  .header-section {
+    height: auto;
+    min-height: 300px;
+    padding: 20px;
+  }
+  
+  .header-info h1 {
+    font-size: 2.5rem;
+  }
+  
   .profile-image-container {
-    width: 40%; /* 더 작은 화면에서는 거의 전체 너비로 설정 */
-    right: 20px; /* 위치 조정 */
+    width: 50%;
+    position: relative;
+    top: 20px;
+    right: auto;
+    margin: 0 auto;
+  }
+  
+  .location {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 20px;
+  }
+  
+  .two-columns {
+    column-count: 1;
   }
 }
