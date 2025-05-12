@@ -252,3 +252,154 @@ body {
     column-count: 1;
   }
 }
+
+/* 기존 CSS는 유지하며 추가 스타일 */
+
+/* 포트폴리오 아이템 스타일 */
+.portfolio-item {
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-header {
+  margin-bottom: 25px;
+}
+
+.portfolio-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.portfolio-image-container {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+}
+
+.process-section h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.process-section p {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* 스킬 카테고리 스타일 */
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* 디자인 철학 섹션 */
+.design-philosophy p {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* 성장 섹션 스타일 */
+.growth-section {
+  background-color: #f9f9f9;
+  padding: 50px;
+  margin-top: 30px;
+}
+
+.growth-intro {
+  font-size: 0.95rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.growth-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #ddd;
+}
+
+.timeline-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.timeline-item p {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.final-statement {
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.final-statement p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+  .growth-section {
+    padding: 30px 20px;
+  }
+  
+  .timeline-item {
+    padding-left: 20px;
+  }
+}

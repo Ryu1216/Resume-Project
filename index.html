@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RYU DONGHYEON - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-  <link  href="style.css" rel="stylesheet" type="text/css">
+  <title>RYU DONGHYEON - UX/UI 포트폴리오</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <!-- 헤더 섹션은 유지하되 타이틀 변경 -->
   <div class="header-section">
     <div class="header-info">
-      <h2>SW Developer</h2>
+      <h2>UX/UI 플래너</h2>
       <h1>RYU<br>DONGHYEON</h1>
-      <p>I became a developer to create the services I wanted and to make things that I thought were worthwhile accessible to anyone anywhere and at any time.</p>
+      <p>사용자 공감과 데이터를 기반으로 한 논리적인 디자인 제안을 통해 의미 있는 가치를 창출합니다.</p>
     </div>
     <div class="location">Yong-In, Korea</div>
     <div class="profile-image-container">
@@ -22,21 +23,22 @@
 
   <div class="container">
     <div class="left-column">
+      <!-- 연락처 정보 유지 -->
       <div class="contact-info">
         <h2 class="section-title">CONTACT</h2>
         <p><span class="bold-text">Email</span><br>r12dh16@gmail.com</p>
         <p><span class="bold-text">Phone</span><br>+82 10-3928-2897</p>
         <p><span class="bold-text">Portfolio</span><br><a href="http://vegastech.tistory.com" target="_blank">vegastech.tistory.com</a></p>
-        <p><span class="bold-text">Website</span><br>www.tester.com</p>
+        <p><span class="bold-text">Website</span><br><a href="http://haruhan.site" target="_blank">haruhan.site</a></p>
       </div>
 
       <div class="social-links">
         <h2 class="section-title">SOCIAL</h2>
         <p><span class="bold-text">LinkedIn</span>/Donghyeon Ryu</p>
-        <p><span class="bold-text">Facebook</span>/tester</p>
-        <p><span class="bold-text">Instagram</span>/ryudong_hyeon</p>
+        <p><span class="bold-text">GitHub</span>/Ryu1216</p>
       </div>
 
+      <!-- 스킬 섹션 확장 -->
       <div class="skills-list">
         <h2 class="section-title">SKILLS</h2>
         <ul>
@@ -44,9 +46,12 @@
           <li>Java</li>
           <li>Python</li>
           <li>HTML</li>
+          <li>CSS</li>
+          <li>Figma</li>
         </ul>
       </div>
-
+      
+      <!-- 교육 정보 유지 -->
       <div class="education-info">
         <h2 class="section-title">EDUCATION</h2>
         <p><span class="bold-text">Bachelor</span></p>
@@ -57,30 +62,157 @@
           <p>2018-2025</p>
         </div>
       </div>
+
+      <!-- 디자인 철학 섹션 추가 -->
+      <div class="design-philosophy">
+        <h2 class="section-title">디자인 철학</h2>
+        <p>모든 디자인 결정에는 '왜'라는 질문이 동반됩니다. 사용자의 문제를 깊이 이해하고, 데이터를 기반으로 논리적인 해결책을 제시하는 것이 제 디자인 과정의 핵심입니다.</p>
+        <p>피드백을 두려워하지 않으며, 다양한 의견을 수용해 더 나은 결과물을 만드는 것을 추구합니다.</p>
+      </div>
     </div>
 
     <div class="right-column">
-      <h2 class="section-title">EXPERIENCE</h2>
-      <div class="experience-item">
-        <h3>HTML과 CSS를 활용한 이력서 배포 자동화</h3>
-        <p class="company">AMaze Study</p>
-        <p class="period">2024-Present</p>
-        <p> HTML과 CSS를 활용하여 이력서를 작성하고, Github Action을 통해서 AWS S3에 저장하고 Cloudfront를 통해서 배포하였음.</p>
+      <h2 class="section-title">PORTFOLIO</h2>
+      
+      <!-- 프로젝트별 포트폴리오 형식으로 변경 -->
+      <!-- 모디브UI -->
+      <div class="portfolio-item">
+        <div class="portfolio-header">
+          <h3>모디브UI 디자인 시스템 구축</h3>
+          <p class="company">개인 프로젝트</p>
+          <p class="period">2025.04 - 현재</p>
+          <div class="tags">
+            <span class="tag">UI 디자인 시스템</span>
+            <span class="tag">프론트엔드 개발</span>
+            <span class="tag">데이터 시각화</span>
+            <span class="tag">대시보드</span>
+          </div>
+        </div>
+        
+        <div class="portfolio-content">
+          <div class="portfolio-image-container">
+            <img src="modive-ui.png" alt="모디브UI 디자인 시스템" class="portfolio-image">
+          </div>
+          
+          <div class="process-section">
+            <h4>문제 정의</h4>
+            <p>복잡한 데이터를 직관적으로 파악할 수 있는 대시보드 UI가 필요했습니다. 기존 시스템은 사용자가 많은 클릭을 해야 정보에 접근할 수 있었고, 데이터 간 연관성을 파악하기 어려웠습니다.</p>
+            
+            <h4>사용자 중심 접근</h4>
+            <p>실제 데이터 분석가와 매니저들을 대상으로 인터뷰를 진행하여 일상 업무에서 가장 자주 확인하는 지표와 의사결정 패턴을 파악했습니다. 이를 통해 핵심 지표를 한눈에 볼 수 있는 대시보드 레이아웃을 설계했습니다.</p>
+            
+            <h4>데이터 기반 디자인</h4>
+            <p>히트맵 분석을 통해 사용자의 시선이 가장 많이 머무는 영역을 파악하고, 중요 지표를 해당 위치에 배치했습니다. 또한 색상 코드를 통해 데이터의 변화량과 중요도를 직관적으로 인식할 수 있도록 했습니다.</p>
+            
+            <h4>협업 과정</h4>
+            <p>백엔드 개발자와 정기적인 미팅을 통해 데이터 구조를 이해하고, 최적의 시각화 방법을 함께 고민했습니다. 프론트엔드 개발자와는 컴포넌트 단위로 UI를 설계하여 재사용성과 일관성을 높였습니다.</p>
+            
+            <h4>배운 점</h4>
+            <p>이 프로젝트를 통해 복잡한 데이터를 단순화하면서도 정보의 가치를 유지하는 방법을 배웠습니다. 특히 사용자가 어떤 맥락에서 데이터를 소비하는지 이해하는 것이 효과적인 데이터 시각화의 핵심임을 깨달았습니다.</p>
+          </div>
+        </div>
       </div>
-
-      <div class="experience-item">
-        <h3>CineAI 영화 추천 프로젝트</h3>
-        <p class="company">팀 프로젝트</p>
-        <p class="period">2025.02-2025.03</p>
-        <p>React 기반 프론트엔드 개발을 담당하여 AI 영화 추천 결과를 사용자에게 효과적으로 전달하는 직관적인 인터페이스를 구축하였음. Header, 영화 상세 페이지, 홈 페이지 등 핵심 컴포넌트를 개발하고, 세션 스토리지를 활용한 상태 관리와 비동기 API 통신 최적화를 통해 사용자 경험을 향상시켰음. SPA 환경에서의 효율적인 데이터 캐싱 전략을 구현하여 페이지 간 이동 시 상태 유지 문제를 해결하였음.</p>
+      
+      <!-- CineAI -->
+      <div class="portfolio-item">
+        <div class="portfolio-header">
+          <h3>CineAI 영화 추천 서비스</h3>
+          <p class="company">팀 프로젝트</p>
+          <p class="period">2025.02-2025.03</p>
+          <div class="tags">
+            <span class="tag">UX 디자인</span>
+            <span class="tag">프론트엔드 개발</span>
+            <span class="tag">웹 페이지</span>
+            <span class="tag">영화 추천</span>
+          </div>
+        </div>
+        
+        <div class="portfolio-content">
+          <div class="portfolio-image-container">
+            <img src="cineai.png" alt="CineAI 영화 추천 서비스" class="portfolio-image">
+          </div>
+          
+          <div class="process-section">
+            <h4>문제 정의</h4>
+            <p>AI 기반 영화 추천 알고리즘의 결과를 사용자에게 어떻게 효과적으로 전달할 것인가가 핵심 과제였습니다. 단순히 추천 목록을 나열하는 것이 아닌, 왜 이 영화가 추천되었는지 이해할 수 있어야 했습니다.</p>
+            
+            <h4>사용자 중심 접근</h4>
+            <p>영화 애호가들을 대상으로 사용자 조사를 실시하여 영화 선택 시 고려하는 주요 요소들(감독, 배우, 장르, 분위기 등)을 파악했습니다. 이를 바탕으로 추천 알고리즘의 결과를 사용자가 이해하기 쉬운 형태로 시각화했습니다.</p>
+            
+            <h4>데이터 기반 디자인</h4>
+            <p>사용자 행동 데이터를 분석하여 가장 클릭률이 높은 UI 요소와 레이아웃을 파악했습니다. A/B 테스트를 통해 '찜하기' 버튼의 위치와 디자인을 최적화하여 사용자 상호작용을 20% 증가시켰습니다.</p>
+            
+            <h4>협업 과정</h4>
+            <p>AI 개발자와 긴밀하게 협력하여 추천 알고리즘의 작동 방식을 이해하고, 이를 사용자에게 투명하게 전달할 수 있는 UI를 설계했습니다. 프론트엔드 개발자와 함께 프로토타입을 제작하고 사용성 테스트를 통해 지속적으로 개선했습니다.</p>
+            
+            <h4>배운 점</h4>
+            <p>이 프로젝트에서 AI와 같은 복잡한 기술을 사용자가 이해하기 쉽게 시각화하는 것의 중요성을 배웠습니다. 또한 팀원 간의 효과적인 커뮤니케이션이 프로젝트 성공의 핵심임을 실감했습니다.</p>
+          </div>
+        </div>
       </div>
-
-      <div class="experience-item">
-        <h3>Kitcha Application Modernization</h3>
-        <p class="company">팀 프로젝트</p>
-        <p class="period">2025.03-2025.04</p>
-        <p>기존 Kitcha 서비스의 클라우드 현대화 프로젝트를 수행하였음. AWS EC2 및 ECS를 활용하여 백엔드 서비스를 마이그레이션하고, 프론트엔드는 S3 버킷에 정적 호스팅하여 배포 효율성을 높였음. Jenkins를 통한 CI/CD 파이프라인을 구축하여 개발부터 배포까지 자동화함으로써 개발 생산성 향상 및 배포 안정성을 확보하였음. 전체 애플리케이션을 클라우드 네이티브 환경으로 현대화하여 확장성과 유지보수성이 개선된 아키텍처를 구현하였음.</p>
+      
+      <!-- 하루한 와이어프레임 -->
+      <div class="portfolio-item">
+        <div class="portfolio-header">
+          <h3>하루한 뉴스레터 서비스 와이어프레임</h3>
+          <p class="company">팀 프로젝트</p>
+          <p class="period">2025.01-2025.04</p>
+          <div class="tags">
+            <span class="tag">와이어프레이밍</span>
+            <span class="tag">사용자 플로우</span>
+            <span class="tag">모바일 UX</span>
+            <span class="tag">프론트엔드 개발</span>
+          </div>
+        </div>
+        
+        <div class="portfolio-content">
+          <div class="portfolio-image-container">
+            <img src="haruhan.png" alt="하루한 모바일 앱 와이어프레임" class="portfolio-image">
+          </div>
+          
+          <div class="process-section">
+            <h4>문제 정의</h4>
+            <p>사용자들이 앱에 처음 진입했을 때 겪는 혼란과 높은 이탈률이 주요 문제였습니다. 복잡한 기능을 어떻게 직관적으로 소개하고 온보딩할 것인지가 핵심 과제였습니다.</p>
+            
+            <h4>사용자 중심 접근</h4>
+            <p>초기 단계에서 사용자 인터뷰를 통해 앱에 대한 기대와 우려사항을 파악했습니다. 다양한 연령층과 디지털 숙련도를 고려하여 누구나 쉽게 이해할 수 있는 단계별 온보딩 프로세스를 설계했습니다.</p>
+            
+            <h4>데이터 기반 디자인</h4>
+            <p>페이퍼 프로토타입으로 초기 사용성 테스트를 진행하고, 사용자의 피드백을 정량적으로 분석했습니다. 이를 바탕으로 사용자 여정 지도를 작성하고 각 단계별 마찰 포인트를 식별하여 개선했습니다.</p>
+            
+            <h4>협업 과정</h4>
+            <p>팀원과의 정기적인 회의를 통해 뉴스레터 서비스의 비즈니스 요구사항과 기술적 제약을 이해하고, 이를 고려한 현실적인 디자인 솔루션을 제시했습니다. 다양한 이해관계자의 의견을 수렴하고 절충점을 찾는 과정에서 커뮤니케이션 능력을 향상시켰습니다.</p>
+            
+            <h4>배운 점</h4>
+            <p>이 프로젝트를 통해 와이어프레임이 단순한 레이아웃 툴이 아닌, 다양한 이해관계자들과의 커뮤니케이션 도구로서 중요한 역할을 한다는 것을 배웠습니다. 또한 초기 단계에서의 철저한 사용자 리서치가 이후 디자인 과정에서 발생할 수 있는 수많은 시행착오를 방지한다는 교훈을 얻었습니다.</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+  
+  <!-- 성장 스토리 섹션 추가 -->
+  <div class="growth-section">
+    <h2 class="section-title"> UX/UI플래너너로서의 성장 여정</h2>
+    <p class="growth-intro">각 프로젝트를 통해 얻은 배움과 성장 경험을 공유합니다.</p>
+    
+    <div class="growth-timeline">
+      <div class="timeline-item">
+        <h3>하루한 (2025.01)</h3>
+        <p>와이어프레임에 집중했던 초기 단계에서는 기능 중심의 설계에 치중했습니다. 사용자 인터뷰를 통해 '왜' 이 기능이 필요한지 질문하게 되었고, 이를 통해 사용자 니즈를 더 깊이 이해하게 되었습니다.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>CineAI (2025.02)</h3>
+        <p>앞선 프로젝트의 경험을 바탕으로 사용자 테스트와 데이터 분석을 디자인 과정에 적극 통합했습니다. 특히 AI 알고리즘이라는 기술적 복잡성을 사용자 경험으로 어떻게 변환할지에 중점을 두었습니다.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>모디브UI (2025.04)</h3>
+        <p>이전 프로젝트들에서의 피드백 수용 과정을 통해 더 체계적인 디자인 시스템을 구축하게 되었습니다. 데이터 시각화라는 새로운 도전에 직면하면서, 정보의 계층화와 직관적인 인터랙션 설계 능력이 크게 향상되었습니다.</p>
+      </div>
+    </div>
+    
+    <div class="final-statement">
+      <p>세 가지 프로젝트를 거치며, 단순한 UI 요소 배치에서 시작해 사용자 니즈와 비즈니스 목표를 통합하는 전략적 UX 플래너로 성장해왔습니다. 매 프로젝트마다 '왜'라는 질문을 통해 디자인 결정의 근거를 마련하고, 피드백을 통해 지속적으로 발전하는 과정이 제 성장의 핵심이었습니다.</p>
     </div>
   </div>
 </body>
