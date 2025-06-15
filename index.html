@@ -27,7 +27,6 @@
       <div class="contact-info">
         <h2 class="section-title">CONTACT</h2>
         <p><span class="bold-text">Email</span><br>r12dh16@gmail.com</p>
-        <p><span class="bold-text">Phone</span><br>+82 10-3928-2897</p>
         <p><span class="bold-text">Blog</span><br><a href="http://vegastech.tistory.com" target="_blank">vegastech.tistory.com</a></p>
       </div>
 
@@ -197,5 +196,39 @@
     </div>
   </div>
   
+  <button onclick="preparePrint()" class="print-button no-print">PDF로 저장</button>
+
+<script>
+  function preparePrint() {
+    window.print();
+  }
+</script>
+
+<style>
+  .print-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  .print-button:hover {
+    background: #555;
+  }
+  
+  /* 이 버튼은 인쇄 시 표시되지 않음 */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
+</style>
 </body>
 </html>
