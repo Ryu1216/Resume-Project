@@ -423,3 +423,41 @@ body {
     padding-left: 20px;
   }
 }
+
+
+.link-tag {
+  display: inline-block;
+  background-color: #e8f0fe; /* 기존 태그보다 약간 파란 색조 */
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #d0e0fc; /* 테두리 추가로 차별화 */
+}
+
+.link-tag a {
+  color: #4285f4; /* 링크 색상을 다르게 */
+  text-decoration: none;
+}
+
+.link-tag a::before {
+  content: "🔗 "; /* 링크 아이콘 추가 */
+  font-size: 0.7rem;
+}
+
+.link-tag:hover {
+  background-color: #d0e0fc; /* 호버 효과 */
+  transition: background-color 0.2s;
+}
+
+.link-tag a:hover {
+  text-decoration: none;
+  color: #2a56c6; /* 호버 시 색상 변화 */
+}
+
+/* 필요한 경우 포트폴리오 이미지 컨테이너에서 p 태그 제거 */
+.portfolio-image-container {
+  margin-bottom: 15px;
+}
