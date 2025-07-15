@@ -257,13 +257,24 @@ body {
 
 /* 포트폴리오 아이템 스타일 */
 .portfolio-item {
-  margin-bottom: 60px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 20px; /* Reduce from whatever value you currently have */
 }
 
 .portfolio-header {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+.portfolio-content {
+  margin-top: 0;
+}
+
+.process-section {
+  padding-bottom: 10px;
+}
+
+/* Add more compact spacing for tags */
+.tags {
+  margin: 5px 0;
 }
 
 .portfolio-header h3 {
